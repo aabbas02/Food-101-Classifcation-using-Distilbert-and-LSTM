@@ -102,7 +102,8 @@ def prepare(text_array, tokenizer, max_length = 128):
                                 max_length).squeeze()
 
     return ids, segments, masks
-    
+
+# token2id for word2vec
 def token2id(listData, maxLen, w2vModel):
     ids = torch.zeros( (len(listData),maxLen) )
     # set equal to id of 0/pad vector
