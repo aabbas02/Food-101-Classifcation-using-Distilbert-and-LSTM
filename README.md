@@ -8,4 +8,6 @@ There are two python code files in this repository, which are explained below:
 
 **2. lstmClassifier.ipynb:** python notebok that trains and tests the lstm + feedfoward network.
 
+The test and train dataset, `train_titles.csv` and `test_tiles.csv' are also included in the repsitory.
+
 Please email any questions to aabbasi1@iastae.edu 
