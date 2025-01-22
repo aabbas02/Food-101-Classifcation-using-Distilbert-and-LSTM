@@ -5,6 +5,7 @@ This repository compares the performace of two deep learning architectures, Dist
 There are two python code files in this repository, which are explained below: 
 
 **1. distilBertClassifier.ipynb:** python notebook that imports the pre-trained distilbert transfomer from huggingface, fine-tunes the weights, and tests the fine-tuned model.
+
 **2. lstmClassifier.ipynb:** python notebok that trains and the lstm + feedfoward network.
 
 Please email any questions to aabbasi1@iastae.edu 
