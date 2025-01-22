@@ -1,2 +1,2 @@
 # Food_101
- Food 101 Classification using Distilbert, compared with classification using LSTM.
+This repository compares the performace of two deep learning architectures, DistilBert transformer and LSTM, for classification on the [Food 101-Dataset](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/). The Food-101 dataset comprises 250 images and captions of each of the 101 dishes.  We only use the text captions in our coomparison. The text files, `train_titles.csv' and `test_titles.csv', are provided in the repository.
