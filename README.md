@@ -6,7 +6,7 @@ There are two python code files in this repository, which are explained below:
 
 **1. distilBertClassifier.ipynb:** python notebook that imports the pre-trained distilbert transfomer from huggingface, fine-tunes the weights, and tests the fine-tuned model.
 
-**2. lstmClassifier.ipynb:** python notebok that trains and tests the lstm + feedfoward network.
+**2. lstmClassifier.ipynb:** python notebok that trains and tests the lstm + feedfoward network using pytorch.
 
 The test and train dataset, `train_titles.csv` and `test_tiles.csv`, are also included in the repsitory.
 
