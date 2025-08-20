@@ -19,7 +19,7 @@ Please email any questions to aabbasi1@iastae.edu
 <img src="./figures/distilBert.png" width="480"/>
 
 
-- A good sanity check  is to inspect a single data point output from the data loaders by decoding the output token ids and reading the sentence to see if it makes sense. For example, 
+- A good sanity check  is to inspect a single data point output from the data loaders by decoding the output token ids and reading the decoded sentence to see if it makes sense. For example, 
 
   `Encoded Text = tensor([  101,  3313,  6207, 11345,  2007,  9781,  4168,  2389, 19116, 17974,
            1064,  2026,  2890,  6895, 10374,  1012,  4012,   102,     0,     0,
