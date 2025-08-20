@@ -11,3 +11,33 @@ There are two python code files in this repository, which are explained below:
 The test and train dataset, `train_titles.csv` and `test_tiles.csv`, are also included in the repsitory.
 
 Please email any questions to aabbasi1@iastae.edu 
+
+# Expected Output
+
+- The distilbert clasifier achieves an expected 86 percent classification accuracy on the text Food 101 Dataset.
+
+<img src="./figures/distilBert.png" width="480"/>
+
+
+- A good sanity check  is to inspect a single data point output from the data loaders by decoding the output token ids and reading the sentence to see if it makes sense. For example, 
+
+  `Encoded Text = tensor([  101,  3313,  6207, 11345,  2007,  9781,  4168,  2389, 19116, 17974,
+           1064,  2026,  2890,  6895, 10374,  1012,  4012,   102,     0,     0,
+              0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+              0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+              0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+              0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+              0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+              0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+              0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+              0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+              0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+              0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+              0,     0,     0,     0,     0,     0,     0,     0]), torch.LongTensor, torch.Size([128])`
+
+  `Decoded tokens from encoded ids: 
+  '[CLS] double apple pie with cornmeal crust recipe | myrecipes. com [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD]'`
+
+  Notice how the decoded sentence has special tokens like [CLS], [SEP], [PAD] that indicate the Start-of-Sentece/Classification token, the Separator/End-of-sentence token and the padding token [PAD].
+
+
